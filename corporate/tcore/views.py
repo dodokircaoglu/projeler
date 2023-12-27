@@ -17,3 +17,10 @@ def welcome_user(request):
 
     # render fonksiyonu ile HTML şablonunu kullanarak bir HTTP yanıtı oluşturuyoruz
     return render(request, 'welcome_user.html', {'user_name': user_name})
+
+def deneme(request):
+    # Görünüm fonksiyonu içinde işlemleri gerçekleştirin
+    result = "Merhaba, deneme!"
+
+    # HttpResponse ile yanıt döndürme
+    return HttpResponse(result)
